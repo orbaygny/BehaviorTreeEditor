@@ -1,0 +1,138 @@
+#node-border {
+    background-color: rgba(30, 32, 34, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left-color: rgba(84, 87, 96, 255);
+    border-right-color: rgba(84, 87, 96, 255);
+    border-top-color: rgba(84, 87, 96, 255);
+    border-bottom-color: rgba(84, 87, 96, 255);
+}
+
+#input {
+    justify-content: flex-start;
+}
+
+#output {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#selection-border {
+    border-left-color: rgba(74, 189, 233, 255);
+    border-right-color: rgba(74, 189, 233, 255);
+    border-top-color: rgba(74, 189, 233, 255);
+    border-bottom-color: rgba(74, 189, 233, 255);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+:hover > #selection-border {
+    border-left-color: rgba(33, 161, 214, 255);
+    border-right-color: rgba(33, 161, 214, 255);
+    border-top-color: rgba(33, 161, 214, 255);
+    border-bottom-color: rgba(33, 161, 214, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+:selected > #selection-border {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+:hover:selected > #selection-border {
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.node {
+    min-width: 150px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#title {
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+}
+
+#desciription {
+    font-size: 10px;
+    -unity-text-align: lower-center;
+}
+
+#divider {
+    min-height: 1px;
+    color: rgba(250, 250, 250, 255);
+    border-left-color: rgba(229, 223, 223, 255);
+    border-right-color: rgba(229, 223, 223, 255);
+    border-top-color: rgba(229, 223, 223, 255);
+    border-bottom-color: rgba(229, 223, 223, 255);
+    background-color: rgba(214, 201, 201, 0.37);
+}
+
+.action #input {
+    background-color: rgba(235, 81, 96, 255);
+}
+
+.composite #input {
+    background-color: rgba(246, 174, 45, 255);
+}
+
+.decorator #input {
+    background-color: rgba(95, 122, 248, 255);
+}
+
+.root #input {
+    background-color: rgba(124, 174, 122, 255);
+    min-height: 20px;
+}
+
+#node-state {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.running #node-state {
+    background-color: rgba(209, 195, 48, 255);
+}
+
+.success #node-state {
+    background-color: rgba(24, 253, 23, 255);
+}
+
+.failure #node-state {
+    background-color: rgba(255, 0, 0, 255);
+}
